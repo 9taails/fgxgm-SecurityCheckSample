@@ -1,6 +1,7 @@
 FROM node:25.2.1-alpine3.22
 
 RUN npm install -g npm@9.1.3
+RUN npm install -g busybox@1.37.0-r20
 
 ADD package.json .
 ADD index.js .
